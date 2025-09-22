@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Error-Prone HTML</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>
+      This is a paragraph.
+      <img src="image.jpg" alt="Not found" />
+      <a href="https://www.example.com">Visit Example Website</a>
+    </p>
+    <div>
+      <button>Another paragraph in a div.</button>
+    </div>
+  </body>
+</html>
