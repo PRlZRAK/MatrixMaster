@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+    <meta name="description" content="My first site" />
+    <ul>
+      <title>My very good website</title>
+      <h1>Shortcuts</h1>
+      <li><a href="#interestingOptions">Options</a></li>
+      <li><a href="#veryFar">The furthest text</a></li>
+      <li><a href="#tierList">TierList</a></li>
+    </ul>
+  </head>
+  <body>
+    <form id="interestingOptions">
+      <div>
+        <hr />
+        <h1>You have to choose</h1>
+        <input type="radio" id="1" name="options" value="funnyOption" />
+        <label for="1">This option is funny</label><br />
+        <input type="radio" id="2" name="options" value="theSecondestOption" />
+        <label for="2">That is the secondest option ever</label><br />
+        <input type="radio" id="3" name="options" value="NotTheBestOption" />
+        <label for="3">That option is not as good as fourth option</label><br />
+        <hr />
+      </div>
+
+      <div>
+        <label for="justText">Write whatever you want</label>
+        <input type="text" id="justText" />
+        <hr />
+      </div>
+
+      <div>
+        <label for="colorBox">Make me full of color</label>
+        <input type="checkbox" id="colorBox" value="iAmFull" />
+        <hr />
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+        <hr />
+      </div>
+    </form>
+    <div id="tierList">
+      <h4>Now lets make a tier list of this form</h4>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2"><h1>TIER LIST</h1></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td bgcolor="red"><h1>S</h1></td>
+            <td><h3>missing 4th option</h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="orange"><h1>A</h1></td>
+            <td><h3>other 3 options</h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="yellow"><h1>B</h1></td>
+            <td><h3></h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="green"><h1>C</h1></td>
+            <td><h3>Box with color</h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="blue"><h1>D</h1></td>
+            <td><h3>Just Textbox</h3></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p id="veryFar">
+      Yes, this text is really <span style="color: rgb(82, 198, 233)">far</span>
+    </p>
+  </body>
+</html>
