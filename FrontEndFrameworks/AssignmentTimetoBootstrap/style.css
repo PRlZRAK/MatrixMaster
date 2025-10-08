@@ -1,0 +1,7 @@
+.mountainDiv {
+  height: 600px;
+}
+.mountainDiv img {
+  height: 100%;
+  object-fit: cover;
+}
