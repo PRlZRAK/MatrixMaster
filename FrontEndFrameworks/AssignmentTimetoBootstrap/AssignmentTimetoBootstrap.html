@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <style>
+     table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My very good website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <ul>
+      <h1>Shortcuts</h1>
+      <li><a href="#interestingOptions">Options</a></li>
+      <li><a href="#veryFar">The furthest text</a></li>
+      <li><a href="#tierList">TierList</a></li>
+    </ul>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Mountain1.jpg" class="d-block w-100" alt="mountain1" />
+        </div>
+        <div class="carousel-item">
+          <img src="Mountain2.jpg" class="d-block w-100" alt="mountain2" />
+        </div>
+        <div class="carousel-item">
+          <img src="Mountain3.jpg" class="d-block w-100" alt="mountain3" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <form id="interestingOptions">
+      <div>
+        <hr />
+        <h1>You have to choose</h1>
+        <input type="radio" id="1" name="options" value="funnyOption" />
+        <label for="1">This option is funny</label><br />
+        <input type="radio" id="2" name="options" value="theSecondestOption" />
+        <label for="2">That is the secondest option ever</label><br />
+        <input type="radio" id="3" name="options" value="NotTheBestOption" />
+        <label for="3">That option is not as good as fourth option</label><br />
+        <hr />
+      </div>
+
+      <div>
+        <label for="justText">Write whatever you want</label>
+        <input type="text" id="justText" />
+        <hr />
+      </div>
+
+      <div>
+        <label for="colorBox">Make me full of color</label>
+        <input type="checkbox" id="colorBox" value="iAmFull" />
+        <hr />
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+        <hr />
+      </div>
+    </form>
+    <div id="tierList">
+      <h4>Now lets make a tier list of this form</h4>
+      <table class="table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2"><h1>TIER LIST</h1></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td bgcolor="red"><h1>S</h1></td>
+            <td><h3>missing 4th option</h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="orange"><h1>A</h1></td>
+            <td><h3>other 3 options</h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="yellow"><h1>B</h1></td>
+            <td><h3></h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="green"><h1>C</h1></td>
+            <td><h3>Box with color</h3></td>
+          </tr>
+          <tr>
+            <td bgcolor="blue"><h1>D</h1></td>
+            <td><h3>Just Textbox</h3></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p id="veryFar">
+      Yes, this text is really <span style="color: rgb(82, 198, 233)">far</span>
+    </p>
+  </body>
+</html>
