@@ -11,7 +11,7 @@ function tierListSubmit() {
   for (let i = 1; i < trlength; i++) {
     document.getElementById(
       pId[i]
-    ).innerHTML = `Number of elements ih row ${i} is ${
+    ).innerHTML = `Number of elements in row ${i} is ${
       document.getElementById("yourTable").rows[i].cells.length - 1
     }`;
   }
