@@ -1,0 +1,31 @@
+.mountainDiv {
+  height: 600px;
+}
+.mountainDiv img {
+  height: 100%;
+  object-fit: cover;
+}
+table {
+  background-color: rgb(33, 37, 41);
+}
+
+#sRow,
+#sRow1 {
+  background-color: rgb(224, 1, 1) !important;
+}
+#aRow,
+#aRow1 {
+  background-color: orange !important;
+}
+#bRow,
+#bRow1 {
+  background-color: rgb(211, 211, 0) !important;
+}
+#cRow,
+#cRow1 {
+  background-color: rgb(0, 160, 0) !important;
+}
+#dRow,
+#dRow1 {
+  background-color: rgb(76, 152, 177) !important;
+}
