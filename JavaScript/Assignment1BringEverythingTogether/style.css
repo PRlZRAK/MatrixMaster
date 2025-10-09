@@ -29,3 +29,7 @@ table {
 #dRow1 {
   background-color: rgb(76, 152, 177) !important;
 }
+th {
+  font-size: 30px;
+  text-align: center;
+}
