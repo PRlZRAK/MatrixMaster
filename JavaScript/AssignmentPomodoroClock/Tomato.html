@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tomato Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="around1"></div>
+    <section class="settingsSection">
+      <div>
+        <p>Break Time</p>
+        <div>
+          <button onclick="breakLengthMinus()">-</button>
+          <p id="breakLength">5</p>
+          <button onclick="breakLengthPlus()">+</button>
+        </div>
+      </div>
+      <div>
+        <p>Session Time</p>
+        <div>
+          <button onclick="sessionLengthMinus()">-</button>
+          <p id="sessionLength">25</p>
+          <button onclick="sessionLengthMinus()">+</button>
+        </div>
+      </div>
+    </section>
+    <section class="timerSection">
+      <div class="timerDiv" onclick="startStop()">
+        <h2 id="timerLabel">Start Session</h2>
+        <p id="currentTime">25:00</p>
+      </div>
+    </section>
+    <div class="around2"></div>
+    <script src="java.js"></script>
+  </body>
+</html>

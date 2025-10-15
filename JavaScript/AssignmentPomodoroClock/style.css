@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.around1 {
+  height: 15%;
+  display: block;
+  background-color: #a55c18;
+}
+.around2 {
+  height: 25%;
+  display: block;
+
+  background-color: #a55c18;
+  border-top: 2px solid rgb(61, 33, 0);
+}
+.settingsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: #a55c18;
+  border-bottom: 2px solid rgb(61, 33, 0);
+}
+.settingsSection div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+}
+.settingsSection div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.settingsSection button {
+  background-color: #e9701f;
+  border: solid #c65e1a 1px;
+  border-radius: 40%;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: rgb(255, 215, 192);
+  cursor: pointer;
+  margin: 0px 5px;
+}
+.settingsSection p {
+  font-size: 25px;
+  color: rgb(255, 215, 192);
+  font-family: "Courier New";
+}
+.timerSection {
+  background-color: rgb(0, 155, 59);
+  border: #007510 2px solid;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  padding: 10px;
+  min-height: 480px;
+}
+.timerDiv {
+  border-radius: 50%;
+  border: #f85a6f 2px dotted;
+  background-color: rgb(255, 211, 161);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+}
+#timerLabel {
+  font-size: 50px;
+  color: #c94000;
+  opacity: 0.8;
+  font-weight: bold;
+  font-family: "Courier New";
+}
+#currentTime {
+  font-size: 80px;
+  color: #c94a00;
+  font-weight: bold;
+  opacity: 0.8;
+  font-family: "Courier New";
+}
