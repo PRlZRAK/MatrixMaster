@@ -38,8 +38,25 @@ ask(
 );
 
 //4
-let calculator = {};
+let calculator = {
+  a: 0,
+  b: 0,
+  read() {
+    this.a = parseInt(prompt("First number:", 0));
+    this.b = parseInt(prompt("Second number:", 0));
+  },
+  sum() {
+    return this.a + this.b;
+  },
+  mul() {
+    return this.a * this.b;
+  },
+};
 
 calculator.read();
 alert(calculator.sum());
 alert(calculator.mul());
+
+//5
+let min = (a, b) => (a < b ? a : b);
+console.log(min(1, 5));
