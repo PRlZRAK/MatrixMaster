@@ -66,8 +66,15 @@ body {
 }
 .timerDiv {
   border-radius: 50%;
-  border: #f85a6f 2px dotted;
-  background-color: rgb(255, 211, 161);
+  border: #f85a6f 3px solid;
+
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 83, 83) 0%,
+    rgb(255, 83, 83) 0%,
+    rgb(255, 211, 161) 0%,
+    rgb(255, 211, 161) 100%
+  );
   height: 100%;
   width: 50%;
   display: flex;
@@ -75,6 +82,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 480px;
+  cursor: pointer;
 }
 #timerLabel {
   font-size: 50px;
@@ -89,4 +97,17 @@ body {
   font-weight: bold;
   opacity: 0.8;
   font-family: "Courier New";
+}
+#resetButton {
+  background-color: #e9701f;
+  border: solid #c65e1a 1px;
+  border-radius: 20%;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-size: 25px;
+  color: rgb(255, 215, 192);
+  font-family: "Courier New";
+  margin-top: 10px;
 }

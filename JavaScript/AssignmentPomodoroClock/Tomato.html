@@ -12,17 +12,25 @@
       <div>
         <p>Break Time</p>
         <div>
-          <button onclick="breakLengthMinus()">-</button>
+          <button class="changeTimeButton" onclick="breakLengthMinus()">
+            -
+          </button>
           <p id="breakLength">5</p>
-          <button onclick="breakLengthPlus()">+</button>
+          <button class="changeTimeButton" onclick="breakLengthPlus()">
+            +
+          </button>
         </div>
       </div>
       <div>
         <p>Session Time</p>
         <div>
-          <button onclick="sessionLengthMinus()">-</button>
+          <button class="changeTimeButton" onclick="sessionLengthMinus()">
+            -
+          </button>
           <p id="sessionLength">25</p>
-          <button onclick="sessionLengthMinus()">+</button>
+          <button class="changeTimeButton" onclick="sessionLengthPlus()">
+            +
+          </button>
         </div>
       </div>
     </section>
@@ -32,7 +40,9 @@
         <p id="currentTime">25:00</p>
       </div>
     </section>
-    <div class="around2"></div>
+    <div class="around2">
+      <button id="resetButton" onclick="reset()">Reset</button>
+    </div>
     <script src="java.js"></script>
   </body>
 </html>
