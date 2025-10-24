@@ -14,15 +14,36 @@
   flex-direction: row;
   text-align: center;
   align-items: center;
-  border-bottom: 3px dotted gray;
-  background-color: rgb(235, 245, 255);
+
   padding: 10px;
   gap: 10px;
-  cursor: pointer;
-  color: rgb(58, 78, 76);
 }
 
 img {
   border-radius: 30px;
   border: 4px solid rgb(201, 255, 250);
+}
+.extraInfoDiv {
+  display: flex;
+  font-family: "Courier New";
+  flex-direction: column;
+  align-items: center;
+}
+.everythingDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 3px dotted gray;
+  background-color: rgb(235, 245, 255);
+  cursor: pointer;
+  color: rgb(58, 78, 76);
+}
+
+@media (max-width: 330px) {
+  .everythingDiv {
+    flex-direction: column;
+  }
+  .tvShowDiv {
+    flex-direction: column;
+  }
 }

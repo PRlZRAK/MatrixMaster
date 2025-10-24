@@ -41,6 +41,8 @@ searchButton.addEventListener("click", function () {
           let tvShowDiv = document.createElement("div");
           let img = document.createElement("img");
           let title = document.createElement("h2");
+          let extraInfoDiv = document.createElement("div");
+          let everythingDiv = document.createElement("div");
 
           title.innerHTML = show.name;
 
@@ -52,11 +54,17 @@ searchButton.addEventListener("click", function () {
           img.setAttribute("alt", `Poster of ${show.name}`);
           img.setAttribute("class", "thumbnailImg");
           tvShowDiv.setAttribute("class", "tvShowDiv");
+          extraInfoDiv.setAttribute("class", "extraInfoDiv");
+          everythingDiv.setAttribute("class", "everythingDiv");
           tvShowDiv.appendChild(img);
           tvShowDiv.appendChild(title);
-          resultsDiv.appendChild(tvShowDiv);
-          tvShowDiv.addEventListener("click", function () {
-            howLong(id, tvShowDiv);
+
+          everythingDiv.appendChild(tvShowDiv);
+          everythingDiv.appendChild(extraInfoDiv);
+
+          resultsDiv.appendChild(everythingDiv);
+          everythingDiv.addEventListener("click", function () {
+            howLong(id, everythingDiv, extraInfoDiv);
           });
         });
       } else {
@@ -69,8 +77,8 @@ searchButton.addEventListener("click", function () {
   http.send();
 });
 
-function howLong(id, tvShowDiv) {
-  tvShowDiv.style.cursor = "wait";
+function howLong(id, everythingDiv, extraInfoDiv) {
+  everythingDiv.style.cursor = "wait";
   let sum = 0;
   let http1 = new XMLHttpRequest();
 
@@ -84,6 +92,9 @@ function howLong(id, tvShowDiv) {
   http1.onreadystatechange = function () {
     if (this.readyState === 4 && this.status === 200) {
       console.log("Number of seasons:", http1.response.number_of_seasons);
+
+      extraInfoDiv.innerHTML = `<p>Number of seasons: ${http1.response.number_of_seasons}</p><p>Number of episodes: ${http1.response.number_of_episodes}</p>`;
+
       //
       for (let i = 1; i <= http1.response.number_of_seasons; i++) {
         let http2 = new XMLHttpRequest();
@@ -114,7 +125,7 @@ function howLong(id, tvShowDiv) {
                   } minutes`
                 );
               }
-              tvShowDiv.style.cursor = "pointer";
+              everythingDiv.style.cursor = "pointer";
             }
           }
         };
@@ -126,5 +137,5 @@ function howLong(id, tvShowDiv) {
   };
 
   http1.send();
-  tvShowDiv.style.cursor = "pointer";
+  everythingDiv.style.cursor = "pointer";
 }
