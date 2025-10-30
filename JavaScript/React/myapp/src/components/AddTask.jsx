@@ -30,7 +30,7 @@ export default class AddTask extends Component {
         />
         <button
           onClick={() => {
-            if (this.state.task == "") {
+            if (this.state.task === "") {
               alert("Task cannot be empty!");
               return;
             }
