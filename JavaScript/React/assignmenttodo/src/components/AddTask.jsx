@@ -46,8 +46,8 @@ export default class AddTask extends Component {
         </button>
         <h1>My todolist:</h1>
         <ul id="todo">
-          {this.state.tasks.map((p) => (
-            <li>
+          {this.state.tasks.map((p, i) => (
+            <li key={i}>
               <p className="taskP">{p.task}:</p> {p.description}
               <button
                 onClick={() => {
