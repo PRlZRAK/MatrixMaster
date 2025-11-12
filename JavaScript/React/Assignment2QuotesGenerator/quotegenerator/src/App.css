@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  text-align: center;
+}
+header {
+  background-color: rgb(102, 102, 102);
+
+  padding: 20px;
+  color: white;
+}
+main {
+  padding: 30px;
+}
+button {
+  width: 300px;
+  height: 60px;
+  background-color: bisque;
+  cursor: pointer;
+}
+div {
+  border: solid rgb(160, 160, 160) 2px;
+}
+.author {
+  font-weight: bold;
+}
