@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+p {
+  font-family: "Courier New";
+  font-weight: bold;
+  font-size: 24px;
+}
+td {
+  font-family: "Courier New";
+  font-weight: bold;
+}
+.rightButtons {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+}
+.rightButtons div {
+  display: block;
+}
+.bodytable {
+  margin-top: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
