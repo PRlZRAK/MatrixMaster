@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+        background-color: #d2f4ff;
+      }
+
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulieren</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="jouwNaam">Write jouw naam</label>
+        <input type="text" id="jouwNaam" required />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+        <hr />
+      </div>
+    </form>
+    <form>
+      <div>
+        <label for="gender">Kies jouw gender:</label>
+        <select name="gender" id="gender">
+          <option value="m">M</option>
+          <option value="v">V</option>
+          <option value="anders">Anders</option>
+        </select>
+      </div>
+      <input type="submit" value="Submit" />
+      <hr />
+    </form>
+    <form>
+      <h3>Hoe ga je naar college?</h3>
+      <input type="checkbox" id="fiets" name="fiets" value="Fiets" />
+      <label for="fiets">Bij fiets</label><br />
+      <input type="checkbox" id="auto" name="auto" value="Auto" />
+      <label for="auto">Bij auto</label><br />
+      <input type="checkbox" id="voet" name="voet" value="Voet" />
+      <label for="voet">Bij voet</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <hr />
+
+    <form>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        required
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <hr />
+  </body>
+</html>
