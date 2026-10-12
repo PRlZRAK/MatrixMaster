@@ -5,7 +5,6 @@
       html {
         background-color: #d2f4ff;
       }
-
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +13,8 @@
   <body>
     <form>
       <div>
-        <label for="jouwNaam">Write jouw naam</label>
+        <label for="jouwNaam">Schrijf jouw naam</label>
         <input type="text" id="jouwNaam" required />
-      </div>
-      <div>
-        <input type="submit" value="Submit" />
         <hr />
       </div>
     </form>
@@ -31,18 +27,17 @@
           <option value="anders">Anders</option>
         </select>
       </div>
-      <input type="submit" value="Submit" />
+
       <hr />
     </form>
     <form>
-      <h3>Hoe ga je naar college?</h3>
+      <p>Hoe ga je naar college?</p>
       <input type="checkbox" id="fiets" name="fiets" value="Fiets" />
       <label for="fiets">Bij fiets</label><br />
       <input type="checkbox" id="auto" name="auto" value="Auto" />
       <label for="auto">Bij auto</label><br />
       <input type="checkbox" id="voet" name="voet" value="Voet" />
       <label for="voet">Bij voet</label><br /><br />
-      <input type="submit" value="Submit" />
     </form>
     <hr />
 
@@ -55,8 +50,10 @@
         minlength="8"
         required
       /><br /><br />
-      <input type="submit" value="Submit" />
     </form>
     <hr />
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
   </body>
 </html>
